@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interconnection Price Calculator</title>
+  </head>
+  <body>
+    <h1>Interconnection Price Calculator</h1>
+    <form action="/result" method="post">
+      <label for="P">Power of the connection (kW):</label>
+      <input type="number" name="P" id="P" required><br>
+      <label for="D_a">Linear distance to the nearest transformer cabin (km):</label>
+      <input type="number" step="0.01" name="D_a" id="D_a" required><br>
+      <label for="D_b">Linear distance to the nearest electrical substation (km):</label>
+      <input type="number" step="0.01" name="D_b" id="D_b" required><br>
+      <label for="D_cavo">Actual length of the connection line made in underground cable:</label>
+      <input type="number" step="0.01" name="D_cavo" id="D_cavo" required><br>
+      <label for="D_aereo">Actual length of the connecting overhead line:</label>
+      <input type="number" step="0.01" name="D_aereo" id="D_aereo" required><br>
+      <label for="connection_type">Type of connection:</label>
+      <select name="connection_type" id="connection_type">
+        <option value
